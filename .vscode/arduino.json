@@ -1,0 +1,6 @@
+{
+    "sketch": "arduino_rfid\\arduino_rfid.ino",
+    "board": "arduino:avr:uno",
+    "programmer": "AVRISP mkII",
+    "port": "COM5"
+}
