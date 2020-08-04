@@ -1,3 +1,4 @@
+
 #include <SPI.h>
 
 #include <MFRC522.h>
@@ -34,7 +35,8 @@ void setup() {
 
 void loop() {
 
- if ( ! mfrc522.PICC_IsNewCardPresent()) {             //새 카드 찾기
+ if ( ! mfrc522.PICC_IsNewCardPresent()) {   
+     printf("Error 1");          //새 카드 찾기
 
   return;
 
@@ -43,6 +45,7 @@ void loop() {
 
 
  if ( ! mfrc522.PICC_ReadCardSerial()) {              //카드 중 하나 선택
+ printf("Error 1");
 
   return;
 
